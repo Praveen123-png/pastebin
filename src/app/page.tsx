@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center h-screen w-screen gap-5">
@@ -18,6 +20,13 @@ export default function Home() {
       <p className="text-center px-3">
         Click the &quot;Click Url&quot; button to create an url for your message
       </p>
+
+      <Link
+        href="/api/pastes"
+        className="bg-white rounded-lg text-black p-2 hover:bg-gray-200 cursor-pointer transition-color duration-300 active:bg-gray-300"
+      >
+        View all pastes
+      </Link>
     </section>
   );
 }
