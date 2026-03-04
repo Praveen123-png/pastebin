@@ -23,3 +23,4 @@ export async function GET(
     return NextResponse.json({ message: "Server error", error: error }, { status: 500 });
   }
 }
+  
